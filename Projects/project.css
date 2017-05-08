@@ -5,6 +5,12 @@ header {
 	padding-bottom: .5em padding-top: 1em
 	
 }
+body {
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+	font-size: 25px;
+}
 <link href="http://fonts.googleapis.com/css?family=Bitter&subset=latin" rel="stylesheet" type="text/css">
 
 <style>

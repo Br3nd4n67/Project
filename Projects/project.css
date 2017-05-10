@@ -1,6 +1,6 @@
 header {
-	text-align: center;
-	color: orange;
+	text-align: left;
+	color: blue;
 	border-bottom: 2px solid black;
 	padding: 0em;
 }
@@ -15,8 +15,9 @@ body {
 	border-left: 2px solid black;
 	border-right: 2px solid black;
 	border-top: 2px solid black;
-	
+	color: white;
 	font-size: 25px;
+	background-image: url('../photos/wood.jpg')
 }
 <link href="http://fonts.googleapis.com/css?family=Bitter&subset=latin" rel="stylesheet" type="text/css">
 
@@ -61,7 +62,7 @@ body {
 /* Top Level link style */
 .droplinetabs > li > a{
     border-radius: 10px 10px 0 0;
-    background: #BADBF2;
+    background: violet;
     text-transform: uppercase;
 }
 

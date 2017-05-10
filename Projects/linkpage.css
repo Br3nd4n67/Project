@@ -1,0 +1,13 @@
+header {
+	text-align: center;
+	font-size: 25px;
+	text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+	color: white;
+	border-bottom: 2px solid black;
+	padding: .2em;
+	border-bottom-left-radius: .7em;
+	border-bottom-right-radius: .7em;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+}
+

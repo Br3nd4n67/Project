@@ -1,17 +1,21 @@
 header {
 	text-align: center;
 	color: orange;
-	border-bottom: 1px solid black;
-	padding-bottom: .5em padding-top: 1em
-	
+	border-bottom: 2px solid black;
+	padding: 0em;
 }
-header p {
+body p {
 	text-align: center;
 }
 body {
+	border-bottom: 2px solid black;
+	padding: .2em;
+	border-bottom-left-radius: .7em;
+	border-bottom-right-radius: .7em;
 	border-left: 2px solid black;
 	border-right: 2px solid black;
-	border-bottom: 2px solid black;
+	border-top: 2px solid black;
+	
 	font-size: 25px;
 }
 <link href="http://fonts.googleapis.com/css?family=Bitter&subset=latin" rel="stylesheet" type="text/css">

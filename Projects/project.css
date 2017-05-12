@@ -1,8 +1,13 @@
 header {
+	align: left
 	text-align: left;
 	color: blue;
 	border-bottom: 2px solid black;
 	padding: 0em;
+	
+}
+header, img {
+	align: left;
 }
 body p {
 	text-align: center;
@@ -15,9 +20,15 @@ body {
 	border-left: 2px solid black;
 	border-right: 2px solid black;
 	border-top: 2px solid black;
+	
 	color: white;
 	font-size: 25px;
 	background-image: url('../photos/wood.jpg')
+}
+body ol {
+	font-size: 16px;
+	text-align: left;
+	
 }
 <link href="http://fonts.googleapis.com/css?family=Bitter&subset=latin" rel="stylesheet" type="text/css">
 

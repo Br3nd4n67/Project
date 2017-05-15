@@ -4,8 +4,14 @@ body {
 	text-align: center; 
 }
 
-h2 {
+h1 {
 	color:#F9D423;
-	border; 2px solid black;
-	 
+	border: 2px dashed yellow;
+}
+o, w{
+	font-size: 75px;
+}
+
+h2{
+	color: #F9D423;
 }

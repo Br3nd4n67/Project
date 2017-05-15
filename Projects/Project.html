@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="project.css" />
-<head><style type="text/css">
+<head>
+	<style type="text/css">
 .menutitle{
 cursor:pointer;
 margin-bottom: 5px;
@@ -20,14 +21,10 @@ margin-bottom: 0.5em;
 
 <script type="text/javascript">
 
-/***********************************************
-* Switch Menu script- by Martial B of http://getElementById.com/
-* Modified by Dynamic Drive for format & NS4/IE4 compatibility
-* Visit http://www.dynamicdrive.com/ for full source code
-***********************************************/
 
-var persistmenu="yes" //"yes" or "no". Make sure each SPAN content contains an incrementing ID starting at 1 (id="sub1", id="sub2", etc)
-var persisttype="sitewide" //enter "sitewide" for menu to persist across site, "local" for this page only
+
+var persistmenu="yes" 
+var persisttype="sitewide" 
 
 if (document.getElementById){ //DynamicDrive.com change
 document.write('<style type="text/css">\n')
@@ -38,10 +35,10 @@ document.write('</style>\n')
 function SwitchMenu(obj){
 	if(document.getElementById){
 	var el = document.getElementById(obj);
-	var ar = document.getElementById("masterdiv").getElementsByTagName("span"); //DynamicDrive.com change
+	var ar = document.getElementById("masterdiv").getElementsByTagName("span"); 
 		if(el.style.display != "block"){ //DynamicDrive.com change
 			for (var i=0; i<ar.length; i++){
-				if (ar[i].className=="submenu") //DynamicDrive.com change
+				if (ar[i].className=="submenu")
 				ar[i].style.display = "none";
 			}
 			el.style.display = "block";
@@ -117,9 +114,6 @@ window.onunload=savemenustate
 </header>
 
 
-
-	<p>A DIY website for those that are go getters!</p>
-	<p>We thought of a few things that seemed like fun to do and want to teach you about it!</p>
 	<!-- Keep all menus within masterdiv-->
 <div id="masterdiv">
 
@@ -135,6 +129,10 @@ window.onunload=savemenustate
 		- <a href="creators.html"><y>Who made this Website?</y></a><br>
 	</span>
 	</div>
+	<p>A DIY website for those that are go getters!</p>
+	
+
+		<p>We thought of a few things that seemed like fun to do and want to teach you about it!</p>
 		<ol>
 			<li>We wil be showng you how to code marquee a moving text or photo
 				<br><marquee direction="up" width="350" height="300" behavior="alternate" style="border:solid black">

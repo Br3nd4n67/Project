@@ -20,13 +20,9 @@ body {
 	
 	color: white;
 	font-size: 25px;
-	background-image: url('/photos/wood.jpg')
-	
+	background-image: url('../photos/wood.jpg')
+
 #image1 {
-	background-image: url("Select.jpg")
-	width: 354px;
-	height: 312px;
-}
+	background-image: url("../photos/Select.jpg")
 #image1:hover {
-	background-image: url("GIF.PNG")
-}
+	background-image: url("../photos/GIF.PNG")

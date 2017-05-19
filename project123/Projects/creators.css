@@ -1,0 +1,20 @@
+body {
+	background-color: green;
+	font-family: sans-serif;
+	text-align: center; 
+}
+
+h1 {
+	color:#F9D423;
+	border: 2px dashed yellow;
+}
+o, w{
+	font-size: 75px;
+}
+
+h2{
+	color: #F9D423;
+}
+aside {
+	text-align: left;
+}

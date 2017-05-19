@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="project.css" />
+<head>
+	<style type="text/css">
+.menutitle{
+cursor:pointer;
+margin-bottom: 5px;
+background-color:#ECECFF;
+color:#000000;
+width:140px;
+padding:2px;
+text-align:center;
+font-weight:bold;
+/*/*/border:1px solid #000000;/* */
+}
+
+.submenu{
+margin-bottom: 0.5em;
+}
+</style>
+
+<script type="text/javascript">
+
+
+
+var persistmenu="yes" 
+var persisttype="sitewide" 
+
+if (document.getElementById){ //DynamicDrive.com change
+document.write('<style type="text/css">\n')
+document.write('.submenu{display: none;}\n')
+document.write('</style>\n')
+}
+
+function SwitchMenu(obj){
+	if(document.getElementById){
+	var el = document.getElementById(obj);
+	var ar = document.getElementById("masterdiv").getElementsByTagName("span"); 
+		if(el.style.display != "block"){ //DynamicDrive.com change
+			for (var i=0; i<ar.length; i++){
+				if (ar[i].className=="submenu")
+				ar[i].style.display = "none";
+			}
+			el.style.display = "block";
+		}else{
+			el.style.display = "none";
+		}
+	}
+}
+
+function get_cookie(Name) { 
+var search = Name + "="
+var returnvalue = "";
+if (document.cookie.length > 0) {
+offset = document.cookie.indexOf(search)
+if (offset != -1) { 
+offset += search.length
+end = document.cookie.indexOf(";", offset);
+if (end == -1) end = document.cookie.length;
+returnvalue=unescape(document.cookie.substring(offset, end))
+}
+}
+return returnvalue;
+}
+
+function onloadfunction(){
+if (persistmenu=="yes"){
+var cookiename=(persisttype=="sitewide")? "switchmenu" : window.location.pathname
+var cookievalue=get_cookie(cookiename)
+if (cookievalue!="")
+document.getElementById(cookievalue).style.display="block"
+}
+}
+
+function savemenustate(){
+var inc=1, blockid=""
+while (document.getElementById("sub"+inc)){
+if (document.getElementById("sub"+inc).style.display=="block"){
+blockid="sub"+inc
+break
+}
+inc++
+}
+var cookiename=(persisttype=="sitewide")? "switchmenu" : window.location.pathname
+var cookievalue=(persisttype=="sitewide")? blockid+";path=/" : blockid
+document.cookie=cookiename+"="+cookievalue
+}
+
+if (window.addEventListener)
+window.addEventListener("load", onloadfunction, false)
+else if (window.attachEvent)
+window.attachEvent("onload", onloadfunction)
+else if (document.getElementById)
+window.onload=onloadfunction
+
+if (persistmenu=="yes" && document.getElementById)
+window.onunload=savemenustate
+
+</script>
+</head>
+<header>
+
+	<img src="../photos/diy.png" width="35px" height="35px" align="left">
+	<h3 > (Do It Yourself)</h3>
+	<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'  <body>
+	<script>
+		click("This is our how to website we will try to teach you something if you have any questions just contact us with the tab"); <
+		body >
+	</script>
+
+	<body background="../photos/wood.jpg" >
+		
+
+</header>
+
+&dArr;Psst click these to browse our site! 
+	<!-- Keep all menus within masterdiv-->
+<div id="masterdiv">
+
+	<div class="menutitle" onclick="SwitchMenu('sub1')">How to projects</div>
+	<span class="submenu" id="sub1">
+		- <a href="Marquee.html"><y>How to code marquee</y></a><br>
+		- <a href="gif.html"><y>How to get a gif from xboxclips.com into your website!</y></a><br>
+	</span>
+
+	<div class="menutitle" onclick="SwitchMenu('sub2')">Fun stuff</div>
+	<span class="submenu" id="sub2">
+		- <a href="linkpage.html"><y>Links to our personal favorite games!</y></a><br>
+		- <a href="creators.html"><y>Who made this Website?</y></a><br>
+	</span>
+	</div>
+		<style>
+	body  {
+    background-image: url('../photos/wood.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+</style>
+	<p>A DIY website for those that are go getters!</p>
+	
+
+		<r><p>We thought of a few things that seemed like fun to do and want to teach you about it!</p></r>
+		<ol>
+			<li>We wil be showng you how to code marquee a moving text or photo
+				<br><marquee direction="up" width="450" height="300" behavior="alternate" style="border:solid black">
+  				<marquee behavior="alternate">
+   					 <img src="../photos/Woman" /><b>Wot in tarnation</b></li>
+   					 
+		
+		</ol>
+	
+	</body>
